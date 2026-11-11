@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Musixer Local - AI Music Studio</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<aside id="sidebar">
+  <div class="brand"><span class="logo">M</span><div><b>Musixer</b><small>Local AI Music Studio</small></div></div>
+  <nav>
+    <a href="#/create" data-route="create">Create</a>
+    <a href="#/library" data-route="library">Library</a>
+    <a href="#/studio" data-route="studio">AI Lyric Studio</a>
+    <a href="#/speech" data-route="speech">AI Speech</a>
+    <a href="#/style" data-route="style">Style Generator</a>
+    <a href="#/lyrics" data-route="lyrics">Lyrics Generator</a>
+    <a href="#/settings" data-route="settings">Settings</a>
+  </nav>
+  <div class="pro-badge">All Pro features unlocked<br><small>Runs 100% on your machine - no login, no credits</small></div>
+  <div id="engine-status" class="engine-status"></div>
+</aside>
+<main id="view"></main>
+<aside id="jobs-panel"><h4>Activity</h4><div id="jobs"></div></aside>
+<footer id="player" class="hidden">
+  <img id="pl-cover" alt="">
+  <div class="pl-meta"><b id="pl-title"></b><small id="pl-style"></small></div>
+  <audio id="pl-audio" controls preload="metadata"></audio>
+</footer>
+<div id="modal" class="hidden"><div class="modal-card"><button class="modal-x" id="modal-x">×</button><div id="modal-body"></div></div></div>
+<div id="toast"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

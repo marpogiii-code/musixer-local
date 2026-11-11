@@ -1,0 +1,9 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+requests>=2.31
+numpy>=1.26
+soundfile>=0.12
+pillow>=10.0
+kokoro>=0.9.4
+demucs>=4.0.1
